@@ -1,36 +1,37 @@
-package com.javaex.advanced;
+package com.javaex.advanced.varInfo;
 
 import java.util.Scanner;
-import com.javaex.advanced.VarData;
 
-public class varInfoPrint {
+import com.javaex.advanced.varInfo.Data;
+
+public class varInfoEx {
 	// 변수형을 선택하면 크기와 최댓값을 알려주는 프로그램
 	// ver 0.1
 	
 	public static void main(String[] args) {
-		VarData cData1 = new VarData("논리형", "boolean",
+		Data cData1 = new Data("논리형", "boolean",
 				"1byte", "true OR false(0과 1이 아니다)", 
 				"boolean isFun = true;");
-		VarData cData2 = new VarData("문자형", "char",
+		Data cData2 = new Data("문자형", "char",
 				"2byte", "모든 유니코드 문자\n(\\u0000~\\uFFFF, 0~65535)", 
 				"char c = 'f';");
-		VarData cData3 = new VarData("정수형", "byte",
+		Data cData3 = new Data("정수형", "byte",
 				"1byte", "-128 ~ 127", 
 				"byte b = 89;");
-		VarData cData4 = new VarData("정수형", "short",
+		Data cData4 = new Data("정수형", "short",
 				"2byte", "-32,768 ~ 32,767 ", 
 				"short s = 32760;");
-		VarData cData5 = new VarData("정수형", "int",
+		Data cData5 = new Data("정수형", "int",
 				"4byte", "-2,147,483,648 ~ 2,147,483,647", 
 				"int x = 59;");
-		VarData cData6 = new VarData("정수형", "long",
+		Data cData6 = new Data("정수형", "long",
 				"8byte", "-9,223,372,036,854,775,808 ~ "
 						+ "9,223,372,036,854,775,807", 
 				"long big = 345678912345L");
-		VarData cData7 = new VarData("실수형", "float",
+		Data cData7 = new Data("실수형", "float",
 				"4byte", "-3.4E38 ~ 3.4E38 ", 
 				"float f = 32.5F;");
-		VarData cData8 = new VarData("실수형", "double",
+		Data cData8 = new Data("실수형", "double",
 				"8byte", "-1.7E308 ~ 1.7E308", 
 				"double d = 2.3e10;");	
 		

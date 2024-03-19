@@ -1,6 +1,6 @@
-package com.javaex.advanced;
+package com.javaex.advanced.varInfo;
 
-public class VarData {
+public class Data {
 	// 변수 정보
 	// 자료형 / 키워드 / 크기 / 표현 범위 / 예제
 	private String mType;
@@ -10,7 +10,7 @@ public class VarData {
 	private String mExample;
 	
 	// 생성자를 만들면 조립이 어렵지만 강제성을 띄게 하자.
-	public VarData(String pType, String pKeyword, String pByte, 
+	public Data(String pType, String pKeyword, String pByte, 
 			String pRange, String pExample) {
 		setType(pType);
 		setKeyword(pKeyword);
