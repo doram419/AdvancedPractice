@@ -10,7 +10,7 @@ public class Data {
 	private String mExample;
 	
 	// 생성자를 만들면 조립이 어렵지만 강제성을 띄게 하자.
-	public Data(String pType, String pKeyword, String pByte, 
+	public void init(String pType, String pKeyword, String pByte, 
 			String pRange, String pExample) {
 		setType(pType);
 		setKeyword(pKeyword);
@@ -23,7 +23,7 @@ public class Data {
 	{
 		System.out.println("자료형 : " + getType() + "\n키워드 : " +
 				getKeyword() + "\n크기 : " + getByte() + "\n표현 범위 : " +
-				getRange() + "\n사용 예 : " + getExample() + "\n");
+				getRange() + "\n사용 예 : " + getExample());
 	}
 	
 	private String getType()
