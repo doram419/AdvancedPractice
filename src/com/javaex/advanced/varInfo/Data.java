@@ -74,4 +74,5 @@ public class Data {
 	private void setExample(String pExample) {
 		mExample = pExample;
 	}
+
 }

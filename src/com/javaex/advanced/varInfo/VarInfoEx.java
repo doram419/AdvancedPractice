@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //import com.javaex.advanced.varInfo.DataManager;
 
-public class varInfoEx {
+public class VarInfoEx {
 	// 변수형을 선택하면 크기와 최댓값을 알려주는 프로그램
 	// ver 0.2
 	
