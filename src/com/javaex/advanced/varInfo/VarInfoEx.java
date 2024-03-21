@@ -13,6 +13,7 @@ public class VarInfoEx {
 		
 		boolean isContinue = true;
 		int userInput = -1;
+		String userNext;
 		
 		dMgr.init();
 		
