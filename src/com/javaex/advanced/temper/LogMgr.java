@@ -1,6 +1,5 @@
 package com.javaex.advanced.temper;
 
-// 나중에 싱글턴 구성
 public class LogMgr {
 	private final int logAmountMax = 3;
 	private int logAmount; 
@@ -79,12 +78,12 @@ public class LogMgr {
 		
 		while(temp != null)
 		{
-			if(temp.getTransType() == Type.CelToFe)
+			if(temp.getTransType() == Type.CEL_TO_FE)
 			{
 				inputChar = "°C";
 				resultChar = "℉";
 			}
-			else if(temp.getTransType() == Type.FeToCel)
+			else if(temp.getTransType() == Type.FE_TO_CEL)
 			{
 				inputChar = "℉";
 				resultChar = "°C";
@@ -104,12 +103,12 @@ public class LogMgr {
 		String resultChar = null;
 		
 
-		if(temp.getTransType() == Type.CelToFe)
+		if(temp.getTransType() == Type.CEL_TO_FE)
 		{
 			inputChar = "°C";
 			resultChar = "℉";
 		}
-		else if(temp.getTransType() == Type.FeToCel)
+		else if(temp.getTransType() == Type.FE_TO_CEL)
 		{
 			inputChar = "℉";
 			resultChar = "°C";

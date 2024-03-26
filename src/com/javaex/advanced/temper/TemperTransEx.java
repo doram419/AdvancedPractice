@@ -18,15 +18,15 @@ public class TemperTransEx {
 			
 			switch (userInput) {
 				case 1, 2->{
-					Type inputType = Type.Error;
+					Type inputType = Type.ERROR;
 					
 					if (userInput == 1) {
-						inputType = Type.CelToFe;
+						inputType = Type.CEL_TO_FE;
 						System.out.println("[ 섭씨 -> 화씨 변환하기 ]");
 					}
 					else
 					{
-						inputType = Type.FeToCel;
+						inputType = Type.FE_TO_CEL;
 						System.out.println("[ 화씨 -> 섭씨 변환하기 ]");
 					}
 					

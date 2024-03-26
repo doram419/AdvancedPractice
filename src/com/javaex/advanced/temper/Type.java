@@ -1,8 +1,8 @@
 package com.javaex.advanced.temper;
 
 public enum Type {
-	CelToFe,
-	FeToCel,
-	Default,
-	Error
+	CEL_TO_FE,
+	FE_TO_CEL,
+	DEFAULT,
+	ERROR
 }
