@@ -16,26 +16,26 @@ public class LogMgr {
 	
 	public void createLog(Type type, double value) {
 		TransLog Log = new TransLog();
-		TransLog frontLog = new TransLog();
+		TransLog front;
 		
 		if(logAmount == 0)
 		{
-			frontLog = null;
+			front = null;
 			first = Log;
 		}
-		else if(logAmount > logAmountMax)
+		else if(logAmount >= logAmountMax)
 		{
 			deleteLog();
-			frontLog = last;
+			front = last;
 			last.setRear(Log);
 		}
 		else
 		{
-			frontLog = last;
+			front = last;
 			last.setRear(Log);
 		}
 		
-		Log.setFront(frontLog);
+		Log.setFront(front);
 		Log.setRear(null);
 		last = Log;
 		
