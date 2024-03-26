@@ -48,6 +48,9 @@ public class VarInfoEx {
 			System.out.print("아무 키 누르면 진행 > ");
 			userNext = sc.next();
 			System.out.flush();
+			
+			//not used방지
+			System.out.println(userNext);
 		}
 		
 		// 스캐너 닫기

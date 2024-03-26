@@ -1,61 +1,68 @@
 package com.javaex.advanced.temper;
 
-
 public class TransLog {
-	private Type m_eTransType;
-	private double m_dValue;
-	private double m_dResult;
-	private TransLog m_pfront;
+	private Type transType;
+	private double value;
+	private double result;
+	private TransLog front;
+	private TransLog rear;
 	
-	public void init(Type pType, double pValue, TransLog pLog) {
-		setTransType(pType);
-		setValue(pValue);
-		setFront(pLog);
+	public void init(Type type, double value) {
+		setTransType(type);
+		setValue(value);
 		setResult(calc());
 	}
 	
 	private double calc()
 	{
-		if(m_eTransType == Type.CelToFe)
+		if(transType == Type.CelToFe)
 		{
-			m_dResult = (9 / 5) * m_dValue + 32;
+			result = (9.0 / 5.0) * value + 32;
 		}
 		else
 		{
-			m_dResult = (5 / 9) * (m_dValue - 32);
+			result = (5.0 / 9.0) * (value - 32);
 		}
-		return m_dResult;
+		return result;
 	}
 	
 	public Type getTransType() {
-		return m_eTransType;
+		return transType;
 	}
 	
-	private void setTransType(Type pTransType) {
-		m_eTransType = pTransType;
+	private void setTransType(Type transType) {
+		this.transType = transType;
 	}
 	
 	public double getValue() {
-		return m_dValue;
+		return value;
 	}
 	
-	private void setValue(double pValue) {
-		m_dValue = pValue;
+	private void setValue(double value) {
+		this.value = value;
 	}
 	
 	public double getResult() {
-		return m_dResult;
+		return result;
 	}
 	
-	private void setResult(double pResult) {
-		m_dResult = pResult;
+	private void setResult(double result) {
+		this.result = result;
 	}
 	
 	public TransLog getFront() {
-		return m_pfront;
+		return front;
 	}
 	
-	private void setFront(TransLog pTransLog) {
-		m_pfront = pTransLog;
+	public void setFront(TransLog transLog) {
+		front = transLog;
+	}
+
+	public TransLog getRear() {
+		return rear;
+	}
+
+	public void setRear(TransLog Rear) {
+		this.rear = Rear;
 	}
 }
