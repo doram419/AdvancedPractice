@@ -7,6 +7,12 @@ public class LogMgr {
 	private TransLog last;
 	private TransLog first;
 	
+	//싱글턴 구성
+	private LogMgr()
+	{
+		
+	}
+	
 	public void init()
 	{
 		logAmount = 0;
