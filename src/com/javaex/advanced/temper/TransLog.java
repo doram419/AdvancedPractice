@@ -15,7 +15,7 @@ public class TransLog {
 	
 	private double calc()
 	{
-		if(transType == Type.CelToFe)
+		if(transType == Type.CEL_TO_FE)
 		{
 			result = (9.0 / 5.0) * value + 32;
 		}
