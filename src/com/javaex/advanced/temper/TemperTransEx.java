@@ -2,6 +2,7 @@ package com.javaex.advanced.temper;
 
 import java.util.Scanner;
 
+// 나중엔 좀 더 깔끔한 기능으로..
 public class TemperTransEx {
 	public static void main(String[] args) {
 		LogMgr.getInstance().init();
