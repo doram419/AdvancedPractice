@@ -7,10 +7,17 @@ public class LogMgr {
 	private TransLog last;
 	private TransLog first;
 	
+	private static LogMgr instance = new LogMgr();
+	
 	//싱글턴 구성
 	private LogMgr()
 	{
 		
+	}
+	
+	public static LogMgr getInstance()
+	{
+		return instance;
 	}
 	
 	public void init()

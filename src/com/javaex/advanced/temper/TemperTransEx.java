@@ -4,15 +4,14 @@ import java.util.Scanner;
 
 public class TemperTransEx {
 	public static void main(String[] args) {
-		LogMgr lMgr = new LogMgr();
-		lMgr.init();
+		LogMgr.getInstance().init();
 		Scanner sc = new Scanner(System.in);
 		int userInput = 0;
 		boolean isContinue = true;
 	
 		while(isContinue)
 		{
-			printInterface(lMgr.getLogAmountMax());
+			printInterface(LogMgr.getInstance().getLogAmountMax());
 			System.out.print("입력 >> ");
 			userInput = sc.nextInt();
 			
@@ -32,12 +31,12 @@ public class TemperTransEx {
 					
 					System.out.print("변환 값 입력 >> ");
 					userInput = sc.nextInt();
-					lMgr.createLog(inputType, userInput);
+					LogMgr.getInstance().createLog(inputType, userInput);
 					System.out.println("< 변환 완료 >");
-					lMgr.printLog();
+					LogMgr.getInstance().printLog();
 				}
 				case 3->{
-					lMgr.printLogAll();
+					LogMgr.getInstance().printLogAll();
 				}
 				case 4->{
 					System.out.println("종료합니다.");
