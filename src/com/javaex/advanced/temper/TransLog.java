@@ -62,7 +62,7 @@ public class TransLog {
 		return rear;
 	}
 
-	public void setRear(TransLog Rear) {
-		this.rear = Rear;
+	public void setRear(TransLog rear) {
+		this.rear = rear;
 	}
 }
