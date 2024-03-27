@@ -11,7 +11,6 @@ public class LogMgr {
 	//싱글턴 구성
 	private LogMgr()
 	{
-		
 	}
 	
 	public static LogMgr getInstance()
